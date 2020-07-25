@@ -1,0 +1,41 @@
+.userList {
+    margin-top: 20px;
+}
+
+.user {
+    /* border-bottom: solid 1px; */
+    width: 80%;
+    margin: auto;
+}
+
+.accordion {
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    padding: 2em;
+    border: none;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+  
+
+.panel {
+    display: none;
+    padding: 5%;
+    height: 0;
+    transition: height 0.2s ease-out;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
