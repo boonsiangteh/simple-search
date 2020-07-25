@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useReducer } from 'react'
 import axios from 'axios'
-import _ from 'underscore'
 import { initialState, reducer } from '../reducer'
 import AppContext from '../context'
 import Input from './Input'
